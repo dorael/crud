@@ -6,10 +6,10 @@ $middlename = $_POST['middlename'];
 $lastname = $_POST['lastname'];
 $birthdate = $_POST['birthdate'];
 $username = $_POST['username'];
-$password = $_POST['password'];
+$tel = $_POST['telefono'];
 
-$sql = "INSERT INTO users(firstname, middlename, lastname, birthdate, username, password) 
-VALUES('$firstname', '$middlename', '$lastname', '$birthdate', '$username', '$password')";
+$sql = "INSERT INTO users(firstname, middlename, lastname, birthdate, username, telefono) 
+VALUES('$firstname', '$middlename', '$lastname', '$birthdate', '$username', '$tel')";
 if(mysqli_query($mysqli, $sql)){
     echo '<script language="javascript">';
 	echo 'alert("Nuevo usuario agregado");';
