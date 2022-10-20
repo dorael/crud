@@ -7,9 +7,9 @@ $middlename = $_POST['middlename'];
 $lastname = $_POST['lastname'];
 $birthdate = $_POST['birthdate'];
 $username = $_POST['username'];
-$password = $_POST['password'];
+$telefono = $_POST['telefono'];
 
-$sql = "UPDATE users SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', username='$username', password='$password' 
+$sql = "UPDATE users SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', username='$username', telefono='$telefono' 
 WHERE username='$id'";
 if(mysqli_query($mysqli, $sql)){
     echo '<script language="javascript">';
